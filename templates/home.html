@@ -12,15 +12,20 @@
  
   <body>
     <div class="container">
-      <h1 class="text-center">@SmarterWes Careers Page</h1>
+      <h1 class="text-center">{{company_name}} Careers</h1>
       <img class="img-fluid" id="banner" img src="https://careers-website-guided-project.wes18.repl.co/static/banner.jpeg" height="320">
       <h2 class="text-center">About Wesley</h2>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet justo donec enim diam vulputate ut pharetra. Aliquet enim tortor at auctor urna nunc id cursus. Ac ut consequat semper viverra nam libero. Pulvinar pellentesque habitant morbi tristique senectus. Sit amet consectetur adipiscing elit pellentesque habitant. Eget nunc lobortis mattis aliquam faucibus. Facilisis sed odio morbi quis commodo odio. Mauris nunc congue nisi vitae suscipit tellus mauris. Habitant morbi tristique senectus et netus. Molestie ac feugiat sed lectus vestibulum. Molestie a iaculis at erat pellentesque adipiscing commodo.</p>
       <h2 class="text-center" mt-2 mb-4>Open Positions</h2>
-      <p>TODO - Show the jobs here </p>
       <div>
-        <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
-          <p>Copyright 2024, @SmarterWes</p>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
+      <div class="text-center">
+      <button class="btn btn-primary btn-lg">Contact Us</button>
+        <p class="mt-4">Copyright 2024, @SmarterWes</p>
+      </div>
     </div>
+  </body>
 </html>
