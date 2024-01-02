@@ -7,13 +7,13 @@ JOBS = [
     'id': 1,
     'title': 'Python Developer',
     'location': 'New York City, USA',
-    'salary': '$100,000'
+    'salary': '$200,000'
   },
   {
     'id': 2,
     'title': 'Data Scientist',
     'location': 'Moscow, ID',
-    'salary': '$120,000'
+    'salary': '$220,000'
   },
   {
     'id': 3,
@@ -24,7 +24,7 @@ JOBS = [
     'id': 4,
     'title': 'Fullstack Westimator',
     'location': 'Austin, TX',
-    'salary': '$145,000'
+    'salary': '$245,000'
   }  
 ]
 
